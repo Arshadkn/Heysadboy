@@ -128,10 +128,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('📺 Mᴏᴠɪᴇ Ｇʀᴏᴜᴘ', url=https://t.me/Dcenimaunverse),
-                          InlineKeyboardButton('🗞️ Oᴡɴᴇʀ', url=https://t.me/Arskottu)
+                          InlineKeyboardButton('📺 Mᴏᴠɪᴇ Ｇʀᴏᴜᴘ', url='https://t.me/Dcenimaunverse'),
+                          InlineKeyboardButton('🗞️ Oᴡɴᴇʀ', url='https://t.me/Arskottu')
                        ],[
-                          InlineKeyboardButton("⚠️ Dᴇʟᴇᴛᴇ 🚸", url="t.me/Arskottu")
+                          InlineKeyboardButton('⚠️ Dᴇʟᴇᴛᴇ 🚸', callback_data='close_pages')
                          ]
                         ]
                     )
@@ -247,15 +247,15 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                     [
-                      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                   ],[
-                      InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-                     ]
-                    ]
+                         [
+                          InlineKeyboardButton('📺 Mᴏᴠɪᴇ Ｇʀᴏᴜᴘ', url='https://t.me/Dcenimaunverse'),
+                          InlineKeyboardButton('🗞️ Oᴡɴᴇʀ', url='https://t.me/Arskottu')
+                       ],[
+                          InlineKeyboardButton('⚠️ Dᴇʟᴇᴛᴇ 🚸', callback_data='close_pages')
+                         ]
+                        ]
+                    )
                 )
-            )
             filetype = msg.media
             file = getattr(msg, filetype.value)
             title = file.file_name
@@ -300,15 +300,15 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [
-             [
-              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-           ],[
-              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
-             ]
-            ]
-        )
-    )
+                         [
+                          InlineKeyboardButton('📺 Mᴏᴠɪᴇ Ｇʀᴏᴜᴘ', url='https://t.me/Dcenimaunverse'),
+                          InlineKeyboardButton('🗞️ Oᴡɴᴇʀ', url='https://t.me/Arskottu')
+                       ],[
+                          InlineKeyboardButton('⚠️ Dᴇʟᴇᴛᴇ 🚸', callback_data='close_pages')
+                         ]
+                        ]
+                    )
+                )
                     
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
